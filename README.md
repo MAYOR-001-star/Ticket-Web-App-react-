@@ -69,7 +69,7 @@ src/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/ticket-app-react.git
+git clone https://github.com/MAYOR-001-star/Ticket-Web-App-react-.git
 cd ticket-app-react
 
 2️⃣ Install Dependencies

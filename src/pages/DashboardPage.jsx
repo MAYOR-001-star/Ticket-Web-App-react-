@@ -26,21 +26,10 @@ export default function DashboardPage() {
     });
   }, [navigate]);
 
-  const handleLogout = () => {
-    localStorage.removeItem("ticketapp_session");
-    navigate("/");
-  };
-
   return (
     <div className="max-w-[1440px] mx-auto px-4 py-10">
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold text-gray-800">Dashboard</h1>
-        <button
-          onClick={handleLogout}
-          className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md transition"
-        >
-          Logout
-        </button>
       </div>
 
       <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">

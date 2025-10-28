@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
-// import wave from "../assets/hero-wave.svg";
 
 export default function LandingPage() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white min-h-[80vh] flex flex-col justify-center items-center text-center px-6">
+    <section className="relative bg-gradient-to-b from-blue-50 to-white min-h-[80vh] flex flex-col justify-center items-center text-center px-6">
       {/* Decorative Circles */}
-      <div class="absolute top-10 left-10 w-20 h-20 bg-blue-200 rounded-full blur-2xl opacity-70"></div>
-      <div class="absolute bottom-44 right-20 w-32 h-32 bg-blue-300 rounded-full blur-2xl opacity-50"></div>
+      <div className="hidden md:block bg-blue-300  w-20 h-20 rounded-full absolute left-[5rem] top-[4rem] opacity-50 floating"></div>
+
+      <div className="hidden md:block bg-blue-300  w-32 h-32 rounded-full absolute left-[36rem] bottom-[6.5rem] lg:left-[66rem] lg:bottom-[6rem] opacity-50 floating z-50"></div>
 
       {/* Hero Content */}
-      <div className="max-w-[800px] z-10 py-16">
-        <h1 className="text-5xl font-bold text-gray-800 mb-4">
+      <div className="max-w-[800px] z-20 py-16">
+        <h1 className="text-5xl font-bold text-gray-800 mb-6 leading-tight">
           Manage Your Tickets Seamlessly
         </h1>
         <p className="text-lg text-gray-600 mb-8">
@@ -37,7 +37,7 @@ export default function LandingPage() {
       <img
         src="/wave.svg"
         alt="wave background"
-        className="mt-0"
+        className="hidden md:block relative z-10 w-full"
       />
     </section>
   );
